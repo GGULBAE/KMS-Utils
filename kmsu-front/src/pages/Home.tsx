@@ -42,7 +42,7 @@ function Home() {
       canvasURLArray.push(childCanvas.toDataURL());
     }
 
-    axios.post('localhost:3001/guildRecognition', {
+    axios.post('http://localhost:8000/guildRecognition', {
       URLArray: canvasURLArray
     })
     .then(function (response) {
